@@ -6,5 +6,5 @@ CREATE TABLE git_demo_customer (
   first_name varchar, 
   last_name varchar
 );
-GRANT OWNERSHIP ON TABLE git_demo_customer TO ROLE SYSADMIN;
+GRANT OWNERSHIP ON TABLE git_demo_customer TO ROLE JLONG_SQL;
 EXECUTE IMMEDIATE FROM 'insert_records.sql';
