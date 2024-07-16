@@ -7,4 +7,4 @@ CREATE TABLE git_demo_customer (
   last_name varchar
 );
 GRANT OWNERSHIP ON TABLE git_demo_customer TO ROLE {{owner}};
-EXECUTE IMMEDIATE FROM 'insert_customers.sql';
+EXECUTE IMMEDIATE FROM 'insert_records.sql';
