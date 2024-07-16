@@ -6,5 +6,5 @@ CREATE TABLE customers1 (
   first_name varchar, 
   last_name varchar
 );
-GRANT OWNERSHIP ON TABLE customers1 TO ROLE {{owner}};
+GRANT OWNERSHIP ON TABLE customers1 TO ROLE {{owner}} REVOKE CURRENT GRANTS;
 EXECUTE IMMEDIATE FROM 'insert_records1.sql';
